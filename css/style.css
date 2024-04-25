@@ -6,20 +6,26 @@ body, html {
 
 header {
     height: 100vh;
-    background: #f4f4f4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden; /* Ensures no scrolling */
+    position: relative; /* Needed to position the image */
 }
 
 header h1 {
-    margin: 20px;
     color: #333;
+    position: absolute; /* Positions the text over the image */
+    width: 100%; /* Full width */
+    z-index: 10; /* Ensures the text is above the image */
 }
 
 header img {
-    max-width: 100%;
-    height: auto;
+    width: 100vw; /* Sets the image width to the viewport width */
+    height: 100vh; /* Sets the image height to the viewport height */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    position: absolute; /* Aligns the image properly */
+    top: 0; /* Aligns the image to the top of the header */
 }
