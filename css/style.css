@@ -1,1 +1,25 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+header {
+    height: 100vh;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px;
+    color: #333;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
