@@ -1,15 +1,11 @@
 import React from "react";
-import "./App.css";
+import "./App.css"; // Import CSS file
 
 function App() {
   return (
     <div className="App">
-      <title>Bröderna näs INC</title>
-
-      <header>
-        <h1></h1>
-        <img src="broderna.jpg" alt="Bröderna"></img>
-      </header>
+      <h1 className="welcomeHeader">Bröderna näs INC</h1>
+      <img className="broderImage" src="broderna.jpg" alt="Bröderna" />
     </div>
   );
 }
