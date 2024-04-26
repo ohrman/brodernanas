@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/brodernanas/static/css/main.b266b6f0.css",
+    "main.js": "/brodernanas/static/js/main.7731ab50.js",
+    "static/js/453.69708de3.chunk.js": "/brodernanas/static/js/453.69708de3.chunk.js",
+    "index.html": "/brodernanas/index.html",
+    "main.b266b6f0.css.map": "/brodernanas/static/css/main.b266b6f0.css.map",
+    "main.7731ab50.js.map": "/brodernanas/static/js/main.7731ab50.js.map",
+    "453.69708de3.chunk.js.map": "/brodernanas/static/js/453.69708de3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b266b6f0.css",
+    "static/js/main.7731ab50.js"
+  ]
+}
