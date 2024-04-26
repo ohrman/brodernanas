@@ -1,7 +1,7 @@
 {
   "name": "brodernanas-app",
   "version": "0.1.0",
-  "homepage": "https://ohrman.github.io/brodernanas",
+  "homepage": "https://www.brodernanas.se/",
 
   "private": true,
   "dependencies": {
