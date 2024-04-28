@@ -1,12 +1,17 @@
 import React from "react";
-import "./App.css"; // Import CSS file
+import { BrowserRouter as Router } from 'react-router-dom';
+import "./App.css";
+import Header from './Header';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="welcomeHeader">Bröderna näs INC</h1>
-      <img className="broderImage" src="broderna.jpg" alt="Bröderna" />
-    </div>
+    <Router> {/* Wrap the contents in a Router */}
+      <div className="App">
+        <Header />  {/* This is your custom header component */}
+        <h1 className="welcomeHeader"></h1>
+        <img className="broderImage" src="broderna.jpg" alt="Bröderna" />
+      </div>
+    </Router>
   );
 }
 
