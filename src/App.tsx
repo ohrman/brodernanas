@@ -11,7 +11,6 @@ function App() {
     <Router> {/* Router wrapper, not necessary for anchor links but kept for structure */}
       <div className="App">
         <Header />  {/* Custom header component */}
-        <a href="#About"></a> {/* Corrected anchor link */}
         <img className="broderImage" src="broderna.jpg" alt="Bröderna" />
         <section id="Video"> {/* Target section with matching ID */}
           <VideoPlayer src='video.mp4'/>  {/* Custom header component */}
