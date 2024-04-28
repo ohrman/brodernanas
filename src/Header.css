@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it spans from the left edge */
+  width: 100%;
+  background-color: #f8f9fa; /* A lighter, modern color that is easy on the eyes */
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* A slightly stronger shadow for depth */
+  padding: 10px 0; /* Vertical padding for better visual spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect the set width and height */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0 20px; /* Padding on the sides of the navigation for wider screens */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically within the nav */
+}
+
+nav ul li {
+  margin: 0 20px; /* Increased spacing between links for a less cramped feel */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Example of setting a specific font */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  color: #0056b3; /* Ensuring focus is also styled for accessibility */
+  outline: none; /* Removes the default focus outline, should handle focus indication in another way if used */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack the links vertically */
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Add vertical space between items */
+  }
+}
