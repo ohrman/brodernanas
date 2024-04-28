@@ -8,7 +8,7 @@ function App() {
     <Router> {/* Wrap the contents in a Router */}
       <div className="App">
         <Header />  {/* This is your custom header component */}
-        <h1 className="welcomeHeader"></h1>
+        <h1 className="welcomeHeader">Bröderna Näs Inc</h1>
         <img className="broderImage" src="broderna.jpg" alt="Bröderna" />
       </div>
     </Router>
