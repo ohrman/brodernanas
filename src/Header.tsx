@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './Header.module.css'
+import './Header.css'; // Import the stylesheet
+
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.header}>
-      <h1>Välkommen</h1>
+    <header>
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          {/* Ensure that the href attributes match the section IDs exactly */}
+          <li><a href="#About">About</a></li>  {/* Corrected to match the ID case */}
+          <li><a href="#Contact">Contact Us</a></li>  {/* Corrected and made unique */}
+          <li><a href="#">Home</a></li>  {/* This will take the user back to the top of the page */}
         </ul>
       </nav>
     </header>
