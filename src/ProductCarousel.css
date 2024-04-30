@@ -1,0 +1,22 @@
+.product-carousel {
+  /* Add any styling for the carousel container */
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure all items are in a single row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.product-card {
+  flex: 0 0 auto; /* Prevent items from growing or shrinking */
+  padding: 10px; /* Add padding between items */
+  text-align: center; /* Center align content */
+}
+
+.product-image {
+  width: 200px; /* Set a fixed width for the images */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Limit the maximum height of the images */
+}

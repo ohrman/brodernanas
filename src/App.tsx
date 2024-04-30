@@ -5,21 +5,54 @@ import Header from './Header';
 import AboutPage from "./AboutPage";
 import ContactPage from "./ContactPage";
 import VideoPlayer from "./VideoPlayer";
+import ProductCarousel from "./ProductCarousel"; // Import your carousel component
 
-function App() {
+const products = [
+  {
+    id: 1,
+    name: 'Product 1',
+    price: 19.99,
+    imageUrl: 'mayo1.jpg'
+  },
+  {
+    id: 2,
+    name: 'Product 2',
+    price: 29.99,
+    imageUrl: 'mayo2.jpg'
+  },
+  {
+    id: 3,
+    name: 'Product 3',
+    price: 39.99,
+    imageUrl: 'mayo3.jpg'
+  },
+  {
+    id: 3,
+    name: 'Product 3',
+    price: 39.99,
+    imageUrl: 'mayo3.jpg'
+  }
+  // Add more products as needed
+];
+
+
+function App() {  
   return (
-    <Router> {/* Router wrapper, not necessary for anchor links but kept for structure */}
+    <Router>
       <div className="App">
-        <Header />  {/* Custom header component */}
+        <Header />
         <img className="broderImage" src="broderna.jpg" alt="Bröderna" />
-        <section id="Video"> {/* Target section with matching ID */}
-          <VideoPlayer src='video.mp4'/>  {/* Custom header component */}
+        <section id="Video">
+          <VideoPlayer src='video.mp4'/>
         </section>
-        <section id="About"> {/* Target section with matching ID */}
-          <AboutPage />  {/* Custom header component */}
+        <section id="About">
+          <AboutPage />
         </section>
-        <section id="Contact"> {/* Target section with matching ID */}
-          <ContactPage />  {/* Custom header component */}
+        <section id="Contact">
+          <ContactPage />
+        </section>
+        <section id="Products">
+          <ProductCarousel products={products} />
         </section>
       </div>
     </Router>

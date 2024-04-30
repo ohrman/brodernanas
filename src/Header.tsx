@@ -15,6 +15,7 @@ const Header: React.FC = () => {
         <ul>
           <li><a href="#About">About</a></li>
           <li><a href="#Contact">Contact Us</a></li>
+          <li><a href="#Products">Products</a></li>
           <li><button onClick={scrollToTop} style={{background: 'none', border: 'none', color: 'blue', cursor: 'pointer'}}>Home</button></li>
         </ul>
       </nav>
