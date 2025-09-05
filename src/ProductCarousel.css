@@ -1,5 +1,15 @@
 .product-carousel {
-  /* Add any styling for the carousel container */
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.product-carousel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
 }
 
 .carousel {
@@ -7,16 +17,73 @@
   flex-wrap: nowrap; /* Ensure all items are in a single row */
   overflow-x: auto; /* Enable horizontal scrolling */
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  gap: 15px; /* Add gap between items */
+  padding: 10px 0;
 }
 
 .product-card {
   flex: 0 0 auto; /* Prevent items from growing or shrinking */
-  padding: 10px; /* Add padding between items */
+  padding: 15px; /* Add padding between items */
   text-align: center; /* Center align content */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 200px; /* Ensure minimum width for cards */
+}
+
+.product-card h3 {
+  margin: 10px 0 5px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.product-card p {
+  margin: 0;
+  color: #666;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .product-image {
   width: 200px; /* Set a fixed width for the images */
   height: auto; /* Maintain aspect ratio */
   max-height: 150px; /* Limit the maximum height of the images */
+  border-radius: 4px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .product-carousel {
+    padding: 0 5px;
+  }
+
+  .product-card {
+    min-width: 180px; /* Smaller cards on mobile */
+    padding: 10px;
+  }
+
+  .product-image {
+    width: 160px; /* Smaller images on mobile */
+    max-height: 120px;
+  }
+
+  .product-card h3 {
+    font-size: 1em;
+  }
+
+  .product-card p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    min-width: 150px; /* Even smaller on very small screens */
+    padding: 8px;
+  }
+
+  .product-image {
+    width: 140px;
+    max-height: 100px;
+  }
 }

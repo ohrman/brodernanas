@@ -8,6 +8,8 @@
   flex-direction: column;
   min-height: 100vh; /* Ensure it takes at least the full height of the viewport but can grow */
   padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  width: 100%;
 }
 
 
@@ -27,9 +29,31 @@ html {
 @media (max-width: 768px) {
   .App {
     padding: 10px; /* Reduce padding for smaller screens */
+    min-height: 100vh; /* Ensure full height on mobile */
+  }
+
+  .broderImage {
+    max-width: 95%; /* Make image more responsive on mobile */
+    margin: 20px 0; /* Add some vertical spacing */
   }
 
   .welcomeHeader {
     font-size: 1.2em; /* Decrease font size for smaller screens */
+  }
+
+  /* Add spacing between sections on mobile */
+  section {
+    margin: 30px 0;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .App {
+    padding: 5px; /* Even less padding on very small screens */
+  }
+
+  .broderImage {
+    max-width: 100%; /* Full width on very small screens */
   }
 }

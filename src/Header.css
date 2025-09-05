@@ -51,15 +51,46 @@ nav ul li a:hover, nav ul li a:focus {
   }
 
   nav ul {
-    flex-direction: column; /* Stack the links vertically */
-    padding: 0;
+    flex-direction: row; /* Keep horizontal on mobile but with adjustments */
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
   nav ul li {
-    margin: 10px 0; /* Add vertical space between items */
+    margin: 5px; /* Reduce margin for better mobile fit */
   }
+
+  nav ul li a,
+  nav ul li button {
+    font-size: 14px; /* Slightly smaller text on mobile */
+    padding: 8px 12px; /* Add padding for better touch targets */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover,
+  nav ul li button:hover {
+    background-color: #e9ecef;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column; /* Stack vertically on very small screens */
+    gap: 5px;
+  }
+
   nav ul li {
-    margin: 10px 0; /* Add vertical space between items */
+    margin: 2px 0;
+  }
+
+  nav ul li a,
+  nav ul li button {
+    font-size: 13px;
+    padding: 6px 10px;
   }
 }
 
