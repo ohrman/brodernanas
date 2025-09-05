@@ -18,7 +18,18 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
     }, [src]);
 
     return (
-        <video ref={videoRef} src={src} controls={false} width="640" height="360">
+        <video 
+            ref={videoRef} 
+            src={src} 
+            controls={false} 
+            style={{
+                width: '100%',
+                maxWidth: '640px',
+                height: 'auto',
+                display: 'block',
+                margin: '0 auto'
+            }}
+        >
             Your browser does not support the video tag.
         </video>
     );

@@ -1,12 +1,13 @@
 .contact-container {
     max-width: 800px; /* Limits the width of the container */
-    width: 800px; /* Fixed width of 500 pixels */
+    width: 100%; /* Responsive width */
     margin: 40px auto; /* Centers the container on the page */
     padding: 20px; /* Adds padding inside the container */
     background-color: #f9f9f9; /* Very light grey background */
     border-radius: 8px; /* Rounded corners for the container */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
     font-family: 'Arial', sans-serif; /* Font styling */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .contact-title {
@@ -20,4 +21,20 @@
     font-size: 16px; /* Font size for the paragraph */
     line-height: 1.5; /* Spacing between lines */
     text-align: center; /* Centers the text */
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 20px 10px; /* Reduce margins on mobile */
+        padding: 15px; /* Reduce padding on mobile */
+    }
+    
+    .contact-title {
+        font-size: 1.5em; /* Slightly smaller title on mobile */
+    }
+    
+    .contact-text {
+        font-size: 14px; /* Smaller text on mobile */
+    }
 }
